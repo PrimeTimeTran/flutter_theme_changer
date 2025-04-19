@@ -1,3 +1,3 @@
 # Flutter Theme Changer
 
-![preview](theme change.gif)
+![](preview.gif)
