@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
         final themeProvider = Provider.of<ThemeProvider>(context);
 
         return MaterialApp(
-          title: 'Flutter Demo',
+          title: 'Theme Demo',
           theme: themeProvider.theme,
           darkTheme: themeProvider.darkTheme,
           themeMode: themeProvider.themeMode,
-          home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          home: const MyHomePage(title: 'Theme Demo'),
         );
       },
     );
@@ -47,11 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text(widget.title),
-          actions: const [
-            MenuIcon(),
-          ]),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+        actions: const [
+          MenuIcon(),
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -89,8 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-
-    themeProvider = Provider.of<ThemeProvider>(context, listen: false);
+    themeProvider = Provider.of<ThemeProvider>(context);
   }
 
   void _incrementCounter() {
