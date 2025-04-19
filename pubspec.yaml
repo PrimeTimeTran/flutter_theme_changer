@@ -1,11 +1,11 @@
-name: demo_theme_flutter
+name: theme_demo
 description: A new Flutter project.
 
-publish_to: "none"
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.1.2 <4.0.0"
+  sdk: '>=3.1.2 <4.0.0'
 
 dependencies:
   flutter:

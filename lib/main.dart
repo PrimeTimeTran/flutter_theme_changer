@@ -1,8 +1,8 @@
-import 'package:demo_theme_flutter/menu_icon.dart';
-import 'package:demo_theme_flutter/them_provider.dart';
-import 'package:demo_theme_flutter/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:theme_demo/menu_icon.dart';
+import 'package:theme_demo/theme.dart';
+import 'package:theme_demo/theme_provider.dart';
 
 void main() {
   runApp(const MyApp());
